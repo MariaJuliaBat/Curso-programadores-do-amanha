@@ -1,0 +1,462 @@
+
+/* estilo geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #1627A1;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transform: .2s;
+    margin-left: 50px;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #1627A1;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #3940adb4;
+    transform: scale(1.05);
+}
+
+/* estilo cabeçalho */
+header{
+    padding: 40px 4%;
+} 
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #616161;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* topo do site */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 45px;
+    white-space: nowrap;
+    margin-left: 50px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color:#1627A1;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+    margin-left: 55px;
+    font-size: 28px;
+}
+
+.topo-do-site .img-topo-site img{
+    height: 450px; width: 450px;
+    margin-right: 40px;
+}
+
+.topo-do-site .img-topo-site img:hover{
+    transform:scale(1.05);
+    transition: .4s;
+    -webkit-filter: drop-shadow(5px 8px 0 rgba(14, 3, 59, 0.514))
+    drop-shadow(5px 9px 0 rgba(19, 8, 117, 0.418));
+    filter: drop-shadow(5px 6px 0 rgba(20, 22, 155, 0.63)) 
+    drop-shadow(5px 23px 0 rgba(22, 10, 150, 0.479))
+}
+
+
+/* estilo das habilidades */
+section.habilidades{
+    padding: 40px 4%;
+}
+
+section.habilidades .flex{
+    gap: 60px;
+}
+
+.habilidades .habilidades-box{
+    color:#fff;
+    padding: 40px;
+    border-radius: 45px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.habilidades .habilidades-box:hover{
+    transform:scale(1.05);
+    box-shadow: 0 0 15px #0d067a75;
+}
+
+.habilidades .habilidades-box i{
+    font-size: 75px;
+    color: #fff;
+}
+
+.habilidades .habilidades-box h3{
+    font-size:30px;
+    margin: 20px 0;
+}
+
+/* estilo do sobre */
+section.sobre{
+    padding: 100px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre #txt-sobre{
+    color: #fff;
+}
+
+.sobre #txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sobre #txt-sobre h2 span{
+    color: #1627A1;
+    display: block;
+}
+
+.sobre #txt-sobre p{
+    margin: 25px 0;
+    text-align: justify;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #1626a1a1;
+    font-size: 33px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.sobre #img-sobre{
+  border-radius: 25px;
+  background:rgba(14, 3, 59, 0.514);
+  padding: 10px;
+  width: 488px;
+  height: 500px;
+}
+
+/* estilo portfolio */
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #959beb1f;
+}
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 3s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #02022e5b;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* estilo form contato */
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input:focus{
+    border-radius: 70px;
+    transition: .3s;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #313a7a4d;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 17px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 150px;
+    transition: all 0.5s;
+}
+
+form textarea:focus{
+    border-radius: 60px;
+    transition: 0.5s;
+}
+
+
+form .btn-enviar{
+    margin-top: 10px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #1627A1;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+    /* obrigada */
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #635de0;
+        flex-direction: column;
+    }
+
+    .txt{
+        font-size: 45px;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+
+    .paragrafo{
+        color: #000000;
+        margin-bottom: 50px;
+    }
+    
+    .btn{
+        padding: 10px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: #130e42;
+        border: 0;
+        cursor: pointer;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .btn:hover{
+        box-shadow: 0px 0px 8px #151958b4;
+        border-radius: 40px;
+    }
+
+
+/* estilo rodapé */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #959beb1f;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+    
+}
+
+.borda{
+    border-top: 2px solid #1627A1;
+}
+
+footer .line-footer p i{
+    color: #1627A1;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1030px){
+    /* classes gerais */
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    /* cabeçalho */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    /* topo do site */
+    section.topo-do-site .flex{
+        gap: 40px;
+    }
+
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%; height: 100%;
+    }
+
+    .topo-do-site h1{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    /* habilidades */
+    section.habilidades{
+        padding: 40px 8%;
+    }
+
+    /* sobre */
+    section.sobre{
+        padding: 80px 8%;
+    }
+   
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .sobre .img-sobre{
+        width: 330px;
+        height: 350px;
+        margin: auto;
+        display: block;
+    }
+
+    .img-sobre img{
+        width: 305px;
+        height: 300px;
+        margin: auto;
+        display: block;
+    }
+
+    /* portfolio */
+    section.portfolio{
+        padding: 80px 8%;
+    }
+
+    .img-port{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex{
+        gap: 60px;
+    }
+
+    }
