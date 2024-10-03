@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <main class="main">
+        <header id="header">
+            <a href="#" class="logo">🧠 Gênio Quiz</a>
+        </header>
+        
+        <div class="container">
+            <section class="quiz-section">
+                <div class="quiz-box">
+                    <h1>G&ecirc;nio Quiz 2.0</h1>
+                    <div class="quiz-header">
+                        <span id="phrase">Pense com calma!</span>
+                        <span class="header-score"> Score: 0 / 5</span>
+                    </div>
+
+                    <h2 class="question-text">.</h2>
+
+                    <div class="option-list">
+                    </div>
+                    
+                    <div class="quiz-footer">
+                        <span class="question-total">1 de 5 Questões</span>
+                        <button onmousedown= "sound1.play()" id="click-btn">🐺</button>
+                        <script>
+                            var sound1 = new Audio();
+                            sound1.src = "sounds/sound1.mp3"
+                        </script>
+                    </div>
+                </div>
+
+                <div class="result-box">
+                 <h2>Seu nível de raciocínio lógico é:</h2>
+                 <div class="percentage-container">
+                    <div class="circular-progress">
+                       <span class="progress-value">0%</span>
+                        </div>
+
+                    <span class="score-text">Parabéns!</span>
+                 </div>
+
+                 <div class="buttons">
+                    <button class="tryAgain-btn"> Jogar Novamente</button>
+                    <button class="goHome-btn">  Começo</button>
+                 </div>
+                </div>
+            </section>
+
+        <section class="home">
+            <div class="home-content">
+                <h1>G&ecirc;nio Quiz 2.0</h1>
+                <p>Que tal desafiar sua mente e sua paciência com o Gênio Quiz 2.0? Inspirado no clássico Gênio Quiz, lançado em 2014, esta nova versão traz um design mais bonito e moderno. O Gênio Quiz exige muito mais que apenas conhecimento — aqui, será preciso pensar fora da caixa!</p>
+                <button class="start-btn">Jogar Quiz</button>
+            </div>
+        </section>
+        </div>
+
+     </main>
+
+     <div class="popup-info">
+        <h2>Guia do Quiz 🧠</h2>
+        <span class="info">1. Clique em Jogar Quiz.</span>
+        <span class="info">2. As questões nem sempre são o que parecem.</span>
+        <span class="info">3. Algumas perguntas podem ser pegadinhas.</span>
+        <span class="info">4. Você não tem limite de tempo.</span>
+        <span class="info">5. Se você errar, terá que começar o quiz novamente.</span>
+        <div class="btn-group">
+            <button class="info-btn exit-btn">Sair</button>
+            <a href="#" class="info-btn continue-btn">Continuar</a>
+        
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
